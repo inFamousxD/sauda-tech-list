@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.HeadNav {
+  background-color: #232323;
+  font-size: calc(2px + 2vmin);
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
-.App-link {
-  color: #61dafb;
+.InfoHead {
+  border-bottom: 1px #232323 solid;
+  font-size: large;
+  padding: 20px 5vh;
+  text-align: left;
+  font-weight: 400;
+  color: rgb(143, 143, 143);
+  background-color: #363636;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.InfoHead input {
+  float: right;
+  width: 250px;
+  border: none;
+  background-color: #363636;
+  text-align: center;
+  border-bottom: #aaa 1px solid;
+}
+
+.Sidebar {
+  float: left;
+  width: 15%;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.cardList {
+  padding: 10px 10px 10px 20px;
+  border-bottom: 1px solid #aaa;
+  font-weight: bold;
+  margin-left: 15%;
+  border-left: 1px solid #aaa;
+}
+
+#cardLabel {
+  position: relative;
+  color: rgba(68, 68, 68, 0.52);
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  display: inline-block;
+  min-width: 130px;
+  margin-right: 30px;
+}
+
+#cardElement {
+  color: #232323;
+  font-weight: 500;
 }
